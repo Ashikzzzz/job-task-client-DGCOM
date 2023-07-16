@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Lottie from 'lottie-react';
+import animation from "../assets/animation/animation_lk5um5zg.json"
 
 const SignUp = () => {
   return (
@@ -9,9 +11,9 @@ const SignUp = () => {
         <h1 className='text-5xl font-bold mt-16 text-center text-cyan-900'>Sign Up Here</h1>
         <div className='grid lg:grid-cols-2 grid-cols-1'>
                {/* lottie  */}
-        {/* <div className='flex items-center '>
-                    <Lottie className='w-96 ml-28' animationData={loginAnimataion} loop={true} />
-                </div> */}
+        <div className='flex items-center '>
+                    <Lottie className='w-96 ml-28' animationData={animation} loop={true} />
+                </div>
 
              <form >
              <div className='grid grid-cols-1'>
@@ -33,22 +35,8 @@ const SignUp = () => {
                </label>
                 <input type="text" name='password' placeholder="Your Password" className="input input-bordered input-primary w-full max-w-xs " />
                 </div>
-                <div className='mt-1'>
-                <label className="label">
-                    <span className="label-text">Your Location?</span>
-               </label>
-                <input type="text" name='location' placeholder="Your Location" className="input input-bordered input-primary w-full max-w-xs " />
-                </div>
-                <div>
-                <label className="label">
-                    <span className="label-text">Your role?</span>
-               </label>
-                <select name='role' className="select select-primary w-full max-w-xs">
-                         <option disabled selected>What is your Role?</option>
-                             <option>buyer</option>
-                            <option>seller</option>
-                            </select>
-                </div>
+               
+               
               </div>
               <p className='font-normal text-sm mt-1'> Already Have an Account?<Link className='underline' to="/login"> Click here</Link> </p>
                <button type='submit' className="text-sm mt-6  w-1/2 mx-auto border-b-2  btn btn-primary ">
