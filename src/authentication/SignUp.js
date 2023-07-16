@@ -33,7 +33,7 @@ const SignUp = () => {
           // console.log(data)
           if(data?.status === "success"){
               alert(data?.massage)
-              navigate("/")
+              navigate("/login")
           }
       })
 
