@@ -7,11 +7,12 @@ import Shop from '../components/Shop'
 const Home = () => {
   return (
     <div>
-        <Header></Header>
+        
         <div className='grid lg:grid-cols-3 grid-cols-1'>
-          <Leftbar></Leftbar>
-          <Shop></Shop>
-          <Rightbar></Rightbar>
+          <Leftbar className="w-1/3"></Leftbar>
+          <Shop className="w-1/3"></Shop>
+          <Rightbar className="w-1/3"></Rightbar>
+          
         </div>
     </div>
   )
