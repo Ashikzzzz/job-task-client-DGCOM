@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { CONTEXT } from '../context/MainContext'
 import Loader from '../loader/Loader'
 
@@ -8,6 +8,13 @@ import Loader from '../loader/Loader'
 const Header = () => {
 
 const {user,loading} = useContext(CONTEXT)
+const navigate = useNavigate()
+
+const handleLogOut=()=>{
+  localStorage.removeItem("token");
+  
+  navigate("/login");
+}
 
 if(loading){
   return <Loader></Loader>
@@ -26,7 +33,7 @@ if(loading){
             user?.email  ? <>
           
 
-          <li ><a >Log Out</a></li>
+          <li ><a onClick={handleLogOut}>Log Out</a></li>
             </>
             :
           <>
@@ -45,7 +52,7 @@ if(loading){
             user?.email  ? <>
           
 
-          <li ><a >Log Out</a></li>
+          <li ><a onClick={handleLogOut}>Log Out</a></li>
             </>
             :
           <>
