@@ -28,12 +28,12 @@ const Login = () => {
       .then(res => res.json())
       .then(data =>{
         console.log(data)
-        if(data?.status ==="success"){
-            alert(data?.massage)
-            const token = data?.data?.token
-            localStorage.setItem("token",token)
-            navigate("/")
-        }
+        // if(data?.status ==="active"){
+        //     alert(data?.massage)
+        //     const token = data?.data?.token
+        //     localStorage.setItem("token",token)
+        //     navigate("/")
+        // }
       })
   
     }
@@ -68,9 +68,9 @@ const Login = () => {
            
            
           </div>
-          <p className='font-normal text-sm mt-1'> Already Have an Account?<Link className='underline' to="/login"> Click here</Link> </p>
+          <p className='font-normal text-sm mt-1'> Already Have an Account?<Link className='underline' to="/signup"> Click here</Link> </p>
            <button type='submit' className="text-sm mt-6  w-1/2 mx-auto border-b-2  btn btn-primary ">
-                Sign Up
+                Log In
            </button>
           
          </form>
