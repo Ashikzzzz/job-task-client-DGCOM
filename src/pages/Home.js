@@ -12,6 +12,7 @@ const Home = () => {
           <Leftbar className="w-1/3"></Leftbar>
           <Shop className="w-1/3"></Shop>
           <Rightbar className="w-1/3"></Rightbar>
+          
         </div>
     </div>
   )
