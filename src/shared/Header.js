@@ -1,12 +1,17 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CONTEXT } from '../context/MainContext'
+import Loader from '../loader/Loader'
 
 
 
 const Header = () => {
 
-const {user} = useContext(CONTEXT)
+const {user,loading} = useContext(CONTEXT)
+
+if(loading){
+  return <Loader></Loader>
+}
 
   return (
     <div>
