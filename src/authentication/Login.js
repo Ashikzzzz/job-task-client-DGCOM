@@ -28,12 +28,12 @@ const Login = () => {
       .then(res => res.json())
       .then(data =>{
         console.log(data)
-        // if(data?.status ==="active"){
-        //     alert(data?.massage)
-        //     const token = data?.data?.token
-        //     localStorage.setItem("token",token)
-        //     navigate("/")
-        // }
+        if(data?.data?.others?.status ==="active"){
+            alert(data?.massage)
+            const token = data?.data?.token
+            localStorage.setItem("token",token)
+            navigate("/")
+        }
       })
   
     }
