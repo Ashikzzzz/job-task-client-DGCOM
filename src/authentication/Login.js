@@ -16,6 +16,7 @@ const Login = () => {
          email,
         password
       }
+      console.log(loginData)
   
       fetch("http://localhost:5000/api/v1/users/log-in",{
         method: "POST",
