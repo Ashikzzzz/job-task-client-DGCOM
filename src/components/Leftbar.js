@@ -23,7 +23,7 @@ useEffect(()=>{
         {
           images?.data?.map(image =>{
             return <div>
-              <img src={image?.picture}></img>
+              <img src={image?.data?.picture}></img>
             </div>
           })
         }
