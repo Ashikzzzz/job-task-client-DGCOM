@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer, LineChart, Line } from 'recharts';
 
 const Chart = () => {
 
@@ -23,7 +23,11 @@ const data=[
         </div>
         {/* chart 2  */}
         <div>
-          <h1>hi</h1>
+        <ResponsiveContainer width="100%" height="100%">
+        <LineChart width={300} height={100} data={data}>
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
+        </LineChart>
+      </ResponsiveContainer>
         </div>
         {/* chart 3  */}
         <div></div>
