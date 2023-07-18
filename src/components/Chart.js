@@ -22,7 +22,9 @@ const data=[
       </ResponsiveContainer>
         </div>
         {/* chart 2  */}
-        <div></div>
+        <div>
+          <h1>hi</h1>
+        </div>
         {/* chart 3  */}
         <div></div>
         {/* chart 4  */}
