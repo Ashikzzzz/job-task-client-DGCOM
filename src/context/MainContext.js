@@ -5,6 +5,7 @@ export const CONTEXT = createContext()
 const UserContext = ({children})=>{
 
 const [user, setUser]= useState({})
+const [loading,setLoading]= useState(true)
 
 
 useEffect(()=>{
@@ -18,13 +19,15 @@ useEffect(()=>{
     .then(data => {
         // console.log(data?.data)
        setUser(data?.data)
+       setLoading(false)
        
     })
 },[user?.email])
 
     const authInfo={
         user,
-        setUser
+        setUser,
+        loading
        
     }
 
