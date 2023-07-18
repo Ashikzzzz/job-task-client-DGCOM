@@ -163,23 +163,23 @@ const data4 = [
 ]
 
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1  ">
+    <div className="grid lg:grid-cols-2 grid-cols-1 bg-slate-700 ">
         {/* chart 1  */}
         <div>
-        <PieChart width={400} height={400}>
+        <PieChart className="w-full" width={300} height={300}>
       <Pie
         data={data}
         dataKey="value"
-        cx={200}
-        cy={200}
+        cx={150}
+        cy={150}
         outerRadius={60}
         fill="#8884d8"
       />
       <Pie
         data={data}
         dataKey="value"
-        cx={200}
-        cy={200}
+        cx={150}
+        cy={150}
         innerRadius={70}
         outerRadius={90}
         fill="#82ca9d"
@@ -189,7 +189,7 @@ const data4 = [
         </div>
         {/* chart 2  */}
         <div>
-        <BarChart width={730} height={250} data={data2} margin={{top: 20, right: 20, bottom: 20, left: 20}} >
+        <BarChart className="w-full" width={320} height={150} data={data2} margin={{top: 20, bottom: 20}} >
   <XAxis dataKey="day" />
   <YAxis />
   <Tooltip />
@@ -198,8 +198,8 @@ const data4 = [
         </div>
         {/* chart 3  */}
         <div>
-        <LineChart width={730} height={250} data={data3}
-  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+        <LineChart className="w-full" width={330} height={150} data={data3}
+  margin={{ top: 5,  bottom: 5 }}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="name" />
   <YAxis />
@@ -211,7 +211,7 @@ const data4 = [
         </div>
         {/* chart 4  */}
         <div>
-        <RadarChart outerRadius={90} width={730} height={250} data={data4}>
+        <RadarChart className="w-full" outerRadius={60} width={330} height={150} data={data4}>
   <PolarGrid />
   <PolarAngleAxis dataKey="subject" />
   <PolarRadiusAxis angle={30} domain={[0, 150]} />
