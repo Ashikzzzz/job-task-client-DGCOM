@@ -32,7 +32,7 @@ const SignUp = () => {
       .then(data => {
           // console.log(data)
           if(data?.status === "success"){
-              alert(data?.massage)
+              alert("Check your email and verify before login")
               navigate("/login")
           }
       })
