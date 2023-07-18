@@ -21,7 +21,7 @@ console.log(images)
        <img className='w-full rounded' src={shoe2} alt=""></img>
        </div>
       
-      <div className='grid lg:grid-cols-4 grid-cols-1 mt-10 bg-slate-100 p-5'>
+      <div className='grid lg:grid-cols-4 grid-cols-4 mt-10  p-5'>
       {
           images?.map(image =>{
             return <div>
