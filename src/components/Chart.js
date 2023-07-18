@@ -163,7 +163,7 @@ const data4 = [
 ]
 
   return (
-    <div>
+    <div className="grid lg:grid-cols-2 grid-cols-1  ">
         {/* chart 1  */}
         <div>
         <PieChart width={400} height={400}>
