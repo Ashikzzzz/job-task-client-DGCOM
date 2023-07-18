@@ -21,7 +21,7 @@ const SignUp = () => {
      
       }
 
-      fetch("http://localhost:5000/api/v1/users/create-user",{
+      fetch("https://job-task-server-ochre.vercel.app/api/v1/users/create-user",{
           method:"POST",
           headers : {
               "Content-type":"application/json"

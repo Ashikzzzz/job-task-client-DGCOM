@@ -9,7 +9,7 @@ const [loading,setLoading]= useState(true)
 
 
 useEffect(()=>{
-    fetch("http://localhost:5000/api/v1/users/me",{
+    fetch("https://job-task-server-ochre.vercel.app/api/v1/users/me",{
         method: "GET",
         headers: {
             authorization: `bearer ${localStorage.getItem("token")}`,

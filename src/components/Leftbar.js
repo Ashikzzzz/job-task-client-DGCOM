@@ -5,7 +5,7 @@ const Leftbar = () => {
   const [images,setImages]= useState([])
 
 useEffect(()=>{
-  fetch("http://localhost:5000/api/v1/image/getting-image-base64-formate")
+  fetch("https://job-task-server-ochre.vercel.app/api/v1/image/getting-image-base64-formate")
   .then(res => res.json())
   .then(data =>{
     // console.log(data?.data)
