@@ -5,7 +5,7 @@ const Leftbar = () => {
   const [images,setImages]= useState([])
 
 useEffect(()=>{
-  fetch("https://job-task-server-dgcom.onrender.com/v1/image/getting-image-base64-formate")
+  fetch("https://job-task-server-dgcom.onrender.com/api/v1/image/getting-image-base64-formate")
   .then(res => res.json())
   .then(data =>{
     // console.log(data?.data)
