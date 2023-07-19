@@ -18,7 +18,7 @@ const Login = () => {
       }
       console.log(loginData)
   
-      fetch("https://job-task-server-ochre.vercel.app/api/v1/users/log-in",{
+      fetch("https://job-task-server-dgcom.onrender.com/api/v1/users/log-in",{
         method: "POST",
         headers: {
             "content-type":"application/json"

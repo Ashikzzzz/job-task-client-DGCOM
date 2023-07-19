@@ -21,7 +21,7 @@ const SignUp = () => {
      
       }
 
-      fetch("https://job-task-server-ochre.vercel.app/api/v1/users/create-user",{
+      fetch("https://job-task-server-dgcom.onrender.com/api/v1/users/create-user",{
           method:"POST",
           headers : {
               "Content-type":"application/json"
